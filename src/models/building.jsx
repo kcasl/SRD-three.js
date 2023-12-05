@@ -115,8 +115,6 @@ const Building = ({ isRotating, setIsRotating, setCurrentStage, ...props}) => {
         case normalizedRotation >= 4 && normalizedRotation <= 5:
           setCurrentStage(1);
           break;
-        default:
-          setCurrentStage(null);
       }
     }
   });

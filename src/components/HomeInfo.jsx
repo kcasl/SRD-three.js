@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const HomeInfo = ({ currentStage }) => {
     if (currentStage === 1)
       return (
-        <h1 className='font-["gothic"] sm:text-xl sm:leading-snug text-center neo-brutalism-emerald py-6 px-12 text-white mx-5'>
+        <h1 className='font-["gothic"] sm:text-xl sm:leading-snug text-center neo-brutalism-emerald py-8 px-14 text-white mx-5'>
           안녕하세요 저희는
           <span className='font-["gothic"] mx-2 text-white'>쇼르디 입니다. 👋</span>
         </h1>
@@ -37,19 +37,19 @@ const HomeInfo = ({ currentStage }) => {
       );
     }
   
-    if (currentStage === 4) {
-      return (
-        <div className='info-box'>
-        <p className='font-["gothic"] sm:text-xl text-center'>
-          쇼르디의 멤버를 소개합니다. 👨‍💻
-        </p>
+    // if (currentStage === 4) {
+    //   return (
+    //     <div className='info-box'>
+    //     <p className='font-["gothic"] sm:text-xl text-center'>
+    //       쇼르디의 멤버를 소개합니다. 👨‍💻
+    //     </p>
   
-        <Link to='/contact' className='font-["gothic"] neo-brutalism-white neo-btn'>
-          Contact
-        </Link>
-      </div>
-      );
-    }
+    //     <Link to='/contact' className='font-["gothic"] neo-brutalism-white neo-btn'>
+    //       Contact
+    //     </Link>
+    //   </div>
+    //   );
+    // }
   
     return null;
   };
